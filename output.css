@@ -1,0 +1,467 @@
+@import url("./css/boska.css");
+
+@font-face {
+  font-family: switzer-variable;
+  src: url(./fonts/Switzer-Variable.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Root */
+:root {
+  --switzer: "switzer-variable";
+  --boska: "Boska-Regular";
+  --arial: "arial";
+  --green: #1b3936;
+  --lime: #75ff69;
+}
+
+body {
+  background-image: url(./images/home.jpg);
+}
+
+/* common css */
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+/* Navbar */
+header {
+  background-image: url(./images/Line.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+  padding-bottom: 172px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: switzer-variable;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+header nav .left {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+}
+header nav .left a {
+  text-decoration: none;
+  color: white;
+}
+header nav .logo {
+}
+header nav .logo a {
+}
+
+header nav .logo a img {
+}
+header nav .right {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+}
+
+header nav .right a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+header .hero {
+  margin-top: 160px;
+  position: relative;
+}
+header .hero .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero .content {
+  position: absolute;
+  top: -90px;
+  text-align: center;
+  width: 100%;
+}
+
+header .hero .content .cosy {
+  color: white;
+  font-size: 262px;
+
+  text-align: center;
+  font-weight: 100;
+  font-family: Boska-Regular;
+  line-height: 0.9;
+}
+
+header .hero .content .cabin {
+  color: #75ff69;
+  font-size: 262px;
+  font-weight: 100;
+  /* margin-left: 500px; */
+  position: absolute;
+  left: 42%;
+  line-height: 0.9;
+  font-family: Boska-Italic;
+}
+
+header .hero .content .in-the {
+  color: white;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 0.9;
+
+  width: 100%;
+  position: absolute;
+  top: 62%;
+  font-family: Boska-Bold;
+}
+
+header .hero .content .woods {
+  font-family: Boska-Regular;
+  color: white;
+  font-weight: 100;
+  font-size: 262px;
+  font-weight: 100;
+  /* margin-left: 500px; */
+  text-align: center;
+  /* line-height: 2.6; */
+  margin-top: 160px;
+}
+
+header .hero .content .description {
+  max-width: 570px;
+  margin: auto;
+  font-size: 16px;
+  color: white;
+  margin-top: -20px;
+  font-family: switzer-variable;
+}
+
+header .hero .play-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Info */
+.info {
+  background-color: white;
+  padding-top: 107px;
+  padding-bottom: 125px;
+}
+.info .container {
+  display: flex;
+  flex-direction: row;
+  gap: 207px;
+  justify-content: space-between;
+}
+.info .container {
+}
+.info .container .left {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+.info .container .left img {
+}
+.info .container .left p {
+  font-size: 24px;
+  font-family: switzer-variable;
+  color: #1b3936;
+}
+.info .container .right {
+  width: 40%;
+}
+
+.info .container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+.info .container .right .card {
+  display: flex;
+  flex-direction: column;
+  color: #1b3936;
+  font-family: switzer-variable;
+}
+.info .container .right .card p {
+  font-family: switzer-variable;
+  font-size: 24px;
+}
+.info .container .right .card .status {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 12px;
+  color: #1b3936;
+}
+
+.info .container .right .card .status h2 {
+  line-height: 0.7;
+  font-family: var(--boska);
+  font-weight: bold;
+  font-size: 100px;
+}
+.info .container .right .card .status span {
+  font-family: switzer-variable;
+  font-size: 24px;
+  color: #1b3936;
+}
+
+/* Image */
+.tree-image {
+  background-image: url(./images/tree.png);
+  height: 804px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* About */
+
+.about {
+  position: relative;
+}
+
+.about .container {
+  margin: auto;
+}
+
+.about .container .img1 {
+  position: absolute;
+  top: 76px;
+  right: 76px;
+  z-index: -10;
+}
+.about .container .img2 {
+  left: 76px;
+  top: 321px;
+  position: absolute;
+  z-index: -10;
+}
+.about .container .img3 {
+  bottom: 155px;
+  left: 149px;
+  z-index: -10;
+  position: absolute;
+}
+.about .container .img4 {
+  position: absolute;
+  right: 157px;
+  bottom: 130px;
+  z-index: -20;
+}
+.about .container .content {
+  max-width: 1083px;
+  margin: auto;
+  z-index: 100;
+
+  padding-bottom: 448px;
+  padding-top: 223px;
+}
+.about .container .content h2 {
+  text-align: center;
+  font-family: var(--switzer);
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 31px;
+  color: var(--lime);
+}
+.about .container .content p {
+  font-size: 68px;
+  color: white;
+  font-family: var(--boska);
+  font-weight: 100;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about .container .content p span {
+  color: #678784;
+}
+
+.clip-path {
+  background-image: url(./images/clip-path.png);
+  height: 113px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Unique Rooms */
+
+.unique-rooms {
+  background: #f9f9f9;
+  padding: 173px 0 184px 0;
+}
+.unique-rooms h1 {
+  max-width: 784px;
+  font-size: 68px;
+  color: var(--green);
+  font-weight: normal;
+}
+.unique-rooms .images {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-top: 148px;
+  justify-content: space-between;
+}
+
+.unique-rooms .images .card {
+  position: relative;
+}
+.unique-rooms .images .card .absolute {
+  position: absolute;
+  left: 39px;
+  bottom: 54px;
+  color: white;
+  font-family: var(--boska);
+  font-size: 32px;
+}
+.unique-rooms .images .card .content {
+  padding: 10px;
+  position: absolute;
+  left: 39px;
+  bottom: 54px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.unique-rooms .images .card .content h2 {
+  font-size: 68px;
+  color: white;
+  font-family: var(--boska);
+  font-weight: 100;
+}
+
+.unique-rooms .images .card .content p {
+  font-family: var(--switzer);
+  max-width: 381px;
+  font-size: 18px;
+}
+.unique-rooms .images .card .content div img {
+  transform: rotate(180deg);
+  margin-right: 40px;
+  cursor: pointer;
+}
+.unique-rooms .images .card1 {
+  width: 27%;
+}
+.unique-rooms .images .card2 {
+  width: 46%;
+  cursor: pointer;
+}
+
+.unique-rooms .images .card2 .content2 {
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-40px);
+  padding-left: 40px;
+}
+.unique-rooms .images .card3 {
+  width: 27%;
+}
+.unique-rooms .images .card3 h2 {
+  position: absolute;
+  left: 39px;
+  bottom: 54px;
+  color: white;
+  font-size: 32px;
+  font-family: var(--boska);
+  font-weight: 100;
+}
+.unique-rooms .images .unique1 {
+  width: 100%;
+}
+
+.unique-rooms .images .unique2 {
+  width: 100%;
+}
+.unique-rooms .images .unique3 {
+  width: 100%;
+}
+
+/* CTA  */
+.cta {
+  text-align: center;
+  background-position: center center;
+}
+
+.cta .background {
+  margin-top: 103px;
+  margin-bottom: 92px;
+  background-image: url(./images/cta-background.png);
+  padding: 169px 0;
+}
+
+.cta .background div {
+  max-width: 603px;
+  margin: auto;
+}
+.cta .background div h1 {
+  font-size: 68px;
+
+  color: white;
+  font-family: var(--boska);
+  font-weight: 100;
+  text-transform: capitalize;
+
+  margin-bottom: 21px;
+}
+
+.cta .background div h1 span {
+  color: var(--lime);
+}
+.cta .background div p {
+  color: white;
+  text-align: center;
+  font-family: var(--switzer);
+  font-size: 18px;
+  max-width: 400px;
+  margin: auto;
+}
+.cta .background div form {
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: row;
+}
+.cta .background div form input {
+  padding: 18px 0 18px 21px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cta .background div form input::placeholder {
+  color: #bbbbbb;
+  font-family: var(--switzer);
+  font-weight: normal;
+}
+.cta .background div form button {
+  width: 174px;
+  background: var(--lime);
+  font-size: 18px;
+  color: var(--green);
+  font-family: var(--boska);
+  font-weight: 600;
+  border: none;
+}
