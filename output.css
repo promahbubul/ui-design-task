@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*Root */
@@ -22,6 +23,8 @@
 
 body {
   background-image: url(./images/home.jpg);
+
+  transition: all ease-in-out 300;
 }
 
 /* common css */
@@ -559,4 +562,130 @@ header .hero .play-btn {
 
 .testimonial-button .btn-right:hover {
   background: var(--green);
+}
+
+/* Footer */
+footer {
+}
+
+footer .footer-top {
+  background-color: white;
+}
+
+footer .footer-top .container {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 151px;
+}
+footer .footer-top .container .left {
+  color: var(--green);
+  width: 70%;
+}
+footer .footer-top .container .left h1 {
+  font-size: 68px;
+  font-weight: normal;
+  font-family: var(--boska);
+  text-transform: capitalize;
+}
+footer .footer-top .container .left p {
+  font-size: 18px;
+  font-family: var(--switzer);
+  margin-top: 8px;
+}
+footer .footer-top .container .left button {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--switzer);
+  margin-top: 70px;
+  border: 1px solid black;
+  padding: 10px 60px;
+  background: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+footer .footer-top .container .right {
+  width: 30%;
+}
+
+/* Footer Middle */
+footer .footer-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-middle .card {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+footer .footer-middle .card .content {
+}
+footer .footer-middle .card .content h1 {
+  font-size: 68px;
+  color: white;
+  font-weight: normal;
+  font-family: var(--boska);
+}
+footer .footer-middle .card .content p {
+  color: white;
+  margin: 10px 0;
+  font-family: var(--switzer);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+footer .footer-middle a {
+  text-decoration: none;
+}
+
+footer .footer-middle .card1 {
+  background-color: var(--lime);
+}
+footer .footer-middle .card1 .content h1 {
+  color: var(--green);
+}
+footer .footer-middle .card1 .content p {
+  color: var(--green);
+}
+footer .footer-middle .card3 .arrow-bottom-right {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+}
+footer .footer-middle .card2 .arrow-bottom-right {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+}
+
+footer .footer-middle .card .arrow-bottom-right {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.navigation-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+  background: white;
+  padding: 20px 0;
+}
+.navigation-footer a {
+  text-decoration: none;
+  font-family: var(--switzer);
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--green);
 }
