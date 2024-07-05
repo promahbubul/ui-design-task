@@ -465,3 +465,98 @@ header .hero .play-btn {
   font-weight: 600;
   border: none;
 }
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 70px 0;
+}
+.testimonial .container .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 150px;
+  align-items: end;
+}
+.testimonial .container .heading h1 {
+  font-size: 68px;
+  font-family: var(--boska);
+  width: 60%;
+
+  color: var(--green);
+  font-weight: 400;
+}
+.testimonial .container .heading p {
+  width: 40%;
+
+  font-size: 18px;
+  font-family: var(--switzer);
+  color: var(--green);
+  font-weight: 400;
+}
+
+.testimonial .testimonial-container {
+  margin-top: 172px;
+  /* gap: 100px; */
+}
+.testimonial .testimonial-container .slider-card .card {
+  position: relative;
+  width: 340px;
+  height: 100%;
+}
+.testimonial .testimonial-container .slider-card .card img {
+  width: 100%;
+  height: 500px;
+}
+.testimonial .testimonial-container .slider-card .card .content {
+  background: white;
+  position: absolute;
+  padding: 20px;
+  bottom: 15px;
+  width: 95%;
+  left: -60px;
+}
+.testimonial .testimonial-container .slider-card .card .content h3 {
+  font-family: var(--switzer);
+  font-weight: normal;
+  color: var(--green);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.testimonial .testimonial-container .slider-card .card .content p {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: normal;
+  font-family: var(--switzer);
+}
+
+.testimonial-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 122px;
+  gap: 30px;
+}
+.testimonial-button .btn-left {
+  background-color: var(--green);
+  border: none;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.testimonial-button .btn-left:hover {
+  background-color: var(--lime);
+}
+.testimonial-button .btn-right {
+  background-color: var(--lime);
+  border: none;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.testimonial-button .btn-right:hover {
+  background: var(--green);
+}
