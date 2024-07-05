@@ -40,7 +40,23 @@ $(document).ready(function () {
     prevArrow: ".btn-left",
     autoplay: true,
     autoplaySpeed: 3000,
-    
+
+    nextArrow: ".btn-right",
+  });
+});
+
+// Rooms Slider Functionalit
+$(document).ready(function () {
+  $(".room-images").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: ".btn-left",
+    autoplay: false,
+    // centerMode: true,
+    // centerPadding: "60px",
+    autoplaySpeed: 3000,
 
     nextArrow: ".btn-right",
   });
